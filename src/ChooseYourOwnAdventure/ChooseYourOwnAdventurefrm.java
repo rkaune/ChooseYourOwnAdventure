@@ -1,6 +1,6 @@
 /*
  * Mr. Kaune
- * April 7, 2022
+ * April 7, 2022 - part 2
  * This is a Choose Your Own Adventure Game
  */
 package ChooseYourOwnAdventure;
@@ -43,6 +43,7 @@ public class ChooseYourOwnAdventurefrm extends javax.swing.JFrame {
 
         txtaDialog.setColumns(20);
         txtaDialog.setRows(5);
+        txtaDialog.setText("This is where the text for the adventure will display.");
         jScrollPane1.setViewportView(txtaDialog);
 
         txtInput.setText("Enter commands here");
@@ -54,7 +55,7 @@ public class ChooseYourOwnAdventurefrm extends javax.swing.JFrame {
 
         jLabel1.setText("jLabel1");
 
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ChooseYourOwnAdventure/rainbow.png"))); // NOI18N
+        jLabel2.setIcon(new javax.swing.ImageIcon("C:\\Users\\rkaune\\Pictures\\Cave_of_time.jpg")); // NOI18N
 
         btnCommand.setText("Let it be so!");
         btnCommand.addActionListener(new java.awt.event.ActionListener() {
@@ -78,13 +79,13 @@ public class ChooseYourOwnAdventurefrm extends javax.swing.JFrame {
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                                 .addComponent(btnCommand, javax.swing.GroupLayout.PREFERRED_SIZE, 117, javax.swing.GroupLayout.PREFERRED_SIZE))))
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(176, 176, 176)
-                        .addComponent(jLabel2)
+                        .addGap(236, 236, 236)
+                        .addComponent(jLabel1)
                         .addGap(0, 0, Short.MAX_VALUE)))
                 .addContainerGap())
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(236, 236, 236)
-                .addComponent(jLabel1)
+                .addGap(134, 134, 134)
+                .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 271, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
@@ -92,15 +93,15 @@ public class ChooseYourOwnAdventurefrm extends javax.swing.JFrame {
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jLabel1)
-                .addGap(14, 14, 14)
-                .addComponent(jLabel2)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGap(40, 40, 40)
+                .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(39, 39, 39)
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 156, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(txtInput, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(btnCommand))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(187, Short.MAX_VALUE))
         );
 
         jMenu1.setText("File");
